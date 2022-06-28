@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+nav{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: #696969;
+}
+
+nav ul li:hover{
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#handlerUser{
+    margin-left: auto;
+}
+
+#handlerUser button{
+    font-size: 16px;
+    color: #696969;
+    font-weight: bold;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#handlerUser #registerUser{
+    border: 2px solid #696969;
+    padding: 13px;
+    border-radius: 6px;
+    margin-left: 10px;
+    width: 100px;
+    height: 44px;
+}
+
+#handlerUser #registerUser:hover{
+    background-color: #696969;
+    color: #fff;
+    transition: 1s;
+}
+
+main{
+    margin: 48px auto;
+    max-width: 1300px;
+    max-height: 693px;
+    display: flex;
+    justify-content: space-around;
+}
+
+section{
+    width: 50%;
+}
+
+section h1{
+    margin-top: 96px;
+    font-size: 4.7rem;
+    font-weight: bold;
+}
+
+section p{
+    margin: 56px 0px;
+    font-size: 18px;
+    color: #696969;
+    line-height: 26px;
+    width: 80%;
+}
+
+section button{
+    background: #141414;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 19px;
+    padding: 12px;
+}
+
+section button:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+section div{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+#heroDesktop{
+    width: 40%;
+}
