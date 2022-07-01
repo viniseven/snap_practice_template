@@ -9,16 +9,20 @@
     </head>
     
     <body>
-        <nav>
+        <nav id="nav">
             <img src="./images/logo.svg" alt="logo snap">
 
-            <ul>
-                <a href="#"><li>Features</li></a>
-                <a href="#"><li>Company</li></a>
-                <a href="#"><li>Careers</li></a>
-                <a href="#"><li>About</li></a>
-            </ul>
+            <div>
+                <ul>
+                    <a href="#"><li>Features</li></a>
+                    <a href="#"><li>Company</li></a>
+                    <a href="#"><li>Careers</li></a>
+                    <a href="#"><li>About</li></a>
+                </ul>
+            </div>
 
+            <button id="buttonMenu" onclick="showMenu()">Menu</button>
+        
             <div id="handlerUser">
                 <button>Login</button>
                 <button id="registerUser">Register</button>
@@ -45,8 +49,8 @@
             </section>
                     
                 <img id="heroDesktop" src="./images/image-hero-desktop.png" 
-                alt="Imagem de jovem segurando um notebook">
-                
+                alt="Imagem de jovem segurando um notebook">   
         </main> 
+        <script src="script.js"></script>
     </body>
 </html>

@@ -13,16 +13,19 @@ body{
 }
 
 nav{
-    padding: 30px;
     display: flex;
     align-items: center;
-    gap: 80px;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1300px;
+    margin: auto;
+    padding-top: 20px;
 }
 
 nav ul{
     display: flex;
     list-style: none;
-    gap: 50px;
+    gap: 40px;
 }
 
 nav ul a{
@@ -36,12 +39,13 @@ nav ul li:hover{
     font-weight: bold;
 }
 
-#handlerUser{
-    margin-left: auto;
+#buttonMenu{
+    display: none;
 }
 
+
 #handlerUser button{
-    font-size: 16px;
+    font-size: 1em;
     color: #696969;
     font-weight: bold;
     border: none;
@@ -51,11 +55,9 @@ nav ul li:hover{
 
 #handlerUser #registerUser{
     border: 2px solid #696969;
-    padding: 13px;
     border-radius: 6px;
+    padding: 10px;
     margin-left: 10px;
-    width: 100px;
-    height: 44px;
 }
 
 #handlerUser #registerUser:hover{
@@ -65,11 +67,16 @@ nav ul li:hover{
 }
 
 main{
-    margin: 48px auto;
+    margin: 80px auto;
+    width: 80%;
     max-width: 1300px;
-    max-height: 693px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+main img{
+    max-width: 500px;
+    width: auto;
 }
 
 section{
@@ -77,13 +84,13 @@ section{
 }
 
 section h1{
-    margin-top: 96px;
+    margin-top: 10%;
     font-size: 4.7rem;
     font-weight: bold;
 }
 
 section p{
-    margin: 56px 0px;
+    margin: 4% 0px;
     font-size: 18px;
     color: #696969;
     line-height: 26px;
@@ -95,7 +102,8 @@ section button{
     color: #fff;
     border-radius: 6px;
     font-size: 19px;
-    padding: 12px;
+    padding: 15px;
+    border: none;
 }
 
 section button:hover{
@@ -104,12 +112,80 @@ section button:hover{
 }
 
 section div{
-    margin-top: 120px;
+    margin-top: 5%;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid blue;
 }
 
 #heroDesktop{
     width: 40%;
+}
+
+@media (max-width: 1024px){
+    main {
+       justify-content: space-between;
+       margin-top: 50px;
+    }    
+}
+
+@media (max-width: 950px){
+    #buttonMenu{
+        display: block;
+    }
+
+    nav div{
+        position: absolute;
+        width: 30%;
+        top: 60px;
+        right: 0;
+        display: block;
+        border: 1px solid blue;
+    }
+
+        #nav.active div{
+        display: flex;
+    }
+}
+@media (max-width: 768px){
+    nav{
+        width: 100%;
+        padding: 5px 10px;
+    }
+    
+    
+    main{
+        margin-top: 30px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    section h1{
+        margin-top: 1px;
+        font-size: 3rem;
+    }
+
+    section div{
+        margin-top: 50px;
+    }
+
+}
+
+@media (max-width: 425px) {
+    main{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    section{
+        border: 1px solid blue;
+        width: 100%;
+        text-align: center;
+    }
+
+    main img{
+        width: 100%;
+    }
 }
